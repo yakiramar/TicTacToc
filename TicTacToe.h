@@ -11,7 +11,8 @@ class TicTacToe
 	    Player* win;
         bool check_win(Board& t_board,Player& xPlayer,Player& oPlayer);
     public:	
-	TicTacToe(uint length);
+	int s_board;
+	TicTacToe(int length);
 	const void play(Player& xPlayer,Player& oPlayer);
 	Board board()const;
 	const Player& winner()const;
