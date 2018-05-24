@@ -1,7 +1,7 @@
 
 #include "TicTacToe.h"
 
-TicTacToe::TicTacToe(uint length):game_board{length}{ }
+TicTacToe::TicTacToe(int length):game_board{length}{s_board=length; }
 
 //_____________________________________________
 
