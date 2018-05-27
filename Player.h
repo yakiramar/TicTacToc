@@ -5,7 +5,7 @@
 
 class Player{
     public:
-    virtual const string name()const=0;
+    virtual const string name() const=0;
     virtual const Coordinate play(const Board& board)=0;
     char myChar;
     void setChar(char t){myChar=t;}
