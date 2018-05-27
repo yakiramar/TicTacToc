@@ -18,3 +18,6 @@ for (uint x=0; x<n;x++) {
                
 } 
     
+const string Champion:: name() const {
+     return "yakir,Naor,Dolev";
+ }
