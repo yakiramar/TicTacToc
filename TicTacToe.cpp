@@ -88,6 +88,7 @@ const void TicTacToe::play(Player& xPlayer, Player& oPlayer)
 //________________check wining__________________
 bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 	uint n=t_board.length;
+	int h=0;
 	uint count_o=0,count_x=0;
 	
 		for(int i=0;i<n;i++)
