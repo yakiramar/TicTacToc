@@ -8,11 +8,13 @@ TicTacToe::TicTacToe(int length):game_board{(uint)length}{board_length=length; }
 
 //_____________________________________________
 
-
-const Player& TicTacToe::winner()const
-{ return *win;
+Board TicTacToe::board() const
+{
+	return game_board;
 	
 }
+
+
 
 //_____________________________________________
 
@@ -78,11 +80,7 @@ const void TicTacToe::play(Player& xPlayer, Player& oPlayer)
 //____________________________________________________
 
 
-Board TicTacToe::board() const
-{
-	return game_board;
-	
-}
+
 
 
 // // Fullgame_board
@@ -165,7 +163,10 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 }
 
 
-
+const Player& TicTacToe::winner()const
+{ return *win;
+	
+}
 // try {if(game_board[{xPlayer.play(game_board)}].c=='O')
 // 	          {  
 // 	         win=&oPlayer; 
