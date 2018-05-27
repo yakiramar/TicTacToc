@@ -1,6 +1,5 @@
 #include "Champion.h"
-using namespace std;
-#include<string>
+
 
 const Coordinate Champion::play(const Board& board){
 uint n=board.size();
