@@ -160,8 +160,8 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 		
 	 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
-			if((t_board[{i,j}].c=='O')||(t_board[{i,j}].c=='O'))
-			++h;
+			if((t_board[{i,j}].c=='O')||(t_board[{i,j}].c=='X'))
+			h++;
 		}
 	}
 	if(h==n*n){win=&oPlayer; return true;}
