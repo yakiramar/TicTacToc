@@ -21,6 +21,7 @@ Spot& Spot::operator=(const Spot& s){
 Spot& Spot::operator=(char c2){
   if((c2!='X')&&(c2!='O')&&(c2!='.')){throw IllegalCharException(c2);}
   c=c2;
+    return *this;
 }
 
 ostream& operator<< (ostream& os, const Spot& s){
