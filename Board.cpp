@@ -55,6 +55,7 @@ Board& Board::operator=(char in){
        
         
     } 
+ return *this;
 }
 
 Board& Board::operator=(const Board& b2){
@@ -79,7 +80,7 @@ Board& Board::operator=(const Board& b2){
             b[i][j]=t;
         }  
     }
-    
+    return *this;
  }
 
 
