@@ -1,5 +1,8 @@
 
 #include "TicTacToe.h"
+#include <string>
+using namespace std;
+
 
 TicTacToe::TicTacToe(int length):game_board{(uint)length}{board_length=length; }
 
@@ -98,13 +101,13 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 				     count_x++;
 				     if(count_x==n){win=&xPlayer; return true; }
 			        }
-			  if(t_board[{i,j}].c=='O')
+		else   {	  if(t_board[{i,j}].c=='O')
 			        {
 			     	count_o++;
 			    	if(count_o==n){win=&oPlayer;return true; }
 			        }
 				
-				
+	        	}
 			}
 		}
 		for(int i=0;i<n;i++)
@@ -116,13 +119,13 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 				     count_x++;
 				     if(count_x==n){win=&xPlayer; return true;}
 			        }
-			  if(t_board[{j,i}].c=='O')
+		else  {	  if(t_board[{j,i}].c=='O')
 			        {
 			     	count_o++;
 			    	if(count_o==n){win=&oPlayer; return true;}
 			        }
 				
-				
+		      }
 			}
 		}
 		 count_o=0;
@@ -133,12 +136,12 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 		    	count_x++;
 		    	if(count_x==n){win=&xPlayer; return true;}
 		    }
-		    if(t_board[{(int)(n-1-i),i}].c=='O')
-		    {
+		else {   if(t_board[{(int)(n-1-i),i}].c=='O')
+		         {
 		    	count_o++;
 		    	if(count_o==n){win=&oPlayer; return true;}
-		    }
-			
+		         }
+		      }
 		}
 		 count_o=0;
 		 count_x=0;
@@ -148,12 +151,12 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 		    	count_x++;
 		    	if(count_x==n){win=&xPlayer; return true;}
 		    }
-		    if(t_board[{i,i}].c=='O')
-		    {
+		else{    if(t_board[{i,i}].c=='O')
+		       {
 		    	count_o++;
 		    	if(count_o==n){win=&oPlayer; return true;}
-		    }
-			
+		       }
+	     	}
 		}
 		
 	 
