@@ -71,7 +71,7 @@ const void TicTacToe::play(Player& xPlayer, Player& oPlayer)
 	  		
 	  	
 	  	
-	  	
+	  	check_win(game_board,xPlayer,oPlayer);
 	  	
       }
 	
