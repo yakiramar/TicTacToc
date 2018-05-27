@@ -88,7 +88,7 @@ Board TicTacToe::board() const
 bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 	uint n=t_board.length;
 	uint count_o=0,count_x=0;
-	while(1){
+	
 		for(int i=0;i<n;i++)
 		{count_o=0;
 		 count_x=0;
@@ -156,7 +156,7 @@ bool TicTacToe::check_win(Board& t_board, Player& xPlayer,Player& oPlayer){
 			
 		}
 		return false;
-	 }
+	 
 	return false;
 	
 }
